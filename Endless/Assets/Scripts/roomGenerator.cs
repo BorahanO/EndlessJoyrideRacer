@@ -31,7 +31,7 @@ public class roomGenerator : MonoBehaviour {
 		GameObject room = (GameObject)Instantiate(availableRooms[randomRoomIndex]);
 
 		// Takes the size of the RoomFloor (width of room) object
-		float roomWidth = room.transform.FindChild("floor").localScale.x;
+		float roomWidth = room.transform.Find("floor").localScale.x;
 
 		// Sets point where new room should be added
 		float roomCenter = farhtestRoomEndX + roomWidth * 0.5f;
